@@ -1,0 +1,37 @@
+:root {
+  --pale-blue: hsl(243, 100%, 93%);
+  --grayish-blue: hsl(229, 7%, 55%);
+  --dark-blue: hsl(228, 56%, 26%);
+  --very-darkblue: hsl(229, 57%, 11%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/fylo-data-storage.appspot.com/o/bg-mobile.png?alt=media&token=c3609436-bb15-4184-a547-473f17a3426d);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+main .main_fylo-container {
+  width: 90%;
+  border: 1px solid red;
+}
