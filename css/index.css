@@ -32,6 +32,27 @@ main {
 }
 
 main .main_fylo-container {
-  width: 90%;
-  border: 1px solid red;
+  width: 85%;
+  padding: 40px;
+  background-color: var(--dark-blue);
+  /* border: 1px solid red; */
+  border-radius: 10px 90px 10px 10px;
+}
+
+main .fylo-icon-container {
+  display: flex;
+  margin-top: 25px;
+  /* border: 1px solid red; */
+}
+
+.fylo-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  background-color: var(--very-darkblue);
+  /* border: 1px solid red; */
+  border-radius: 10px;
 }
