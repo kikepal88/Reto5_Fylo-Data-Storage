@@ -39,14 +39,12 @@ main .main_fylo-container {
   margin: 150px 0 10px 0;
   padding: 40px;
   background-color: var(--dark-blue);
-  /* border: 1px solid red; */
   border-radius: 10px 90px 10px 10px;
 }
 
-main .fylo-icon-container {
+.fylo-icon-container {
   display: flex;
   margin-top: 25px;
-  /* border: 1px solid red; */
 }
 
 .fylo-icon {
@@ -57,7 +55,6 @@ main .fylo-icon-container {
   height: 50px;
   margin-right: 15px;
   background-color: var(--very-darkblue);
-  /* border: 1px solid red; */
   border-radius: 10px;
 }
 
@@ -65,9 +62,8 @@ main .main-datastorage-container {
   position: relative;
   width: 85%;
   margin: 10px 0 150px 0;
-  padding: 40px 30px 60px;
+  padding: 30px 30px 50px;
   text-align: center;
-  /* border: 1px solid red; */
   background-color: var(--dark-blue);
   border-radius: 10px;
 }
@@ -80,7 +76,6 @@ main .main-datastorage-container {
   margin: 10px 0;
   padding: 3px;
   background-color: var(--very-darkblue);
-  /* border: 1px solid red; */
   border-radius: 12px;
 }
 
@@ -116,7 +111,7 @@ main .main-datastorage-container {
   justify-content: center;
   align-items: center;
   width: 170px;
-  height: 70px;
+  height: 65px;
   padding: 20px 12px;
   background-color: white;
   color: var(--grayish-blue);
@@ -128,4 +123,67 @@ main .main-datastorage-container {
   margin-right: 10px;
   color: var(--very-darkblue);
   font-size: 40px;
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--very-darkblue);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/fylo-data-storage.appspot.com/o/bg-desktop.png?alt=media&token=4518b459-3e0e-40f6-88ec-ef510fd42bca);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
+  main .main_fylo-container {
+    width: 45%;
+    max-width: 320px;
+    margin: 0 10px;
+  }
+
+  main .main-datastorage-container {
+    top: 20px;
+    width: 45%;
+    max-width: 600px;
+    margin: 0 10px;
+    padding: 40px;
+  }
+
+  .datastorage-info {
+    text-align: start;
+  }
+
+  .free-datastorage-info {
+    top: -35px;
+    right: 10%;
+    border-radius: 10px 10px 0 10px;
+  }
+  .arrow {
+    position: absolute;
+    right: 0px;
+    bottom: -30px;
+    width: 30px;
+    height: 30px;
+    clip-path: polygon(0% 0%, 100% 0, 100% 100%);
+    background-color: white;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .free-datastorage-info {
+    right: 9%;
+    border-radius: 10px 10px 0 10px;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  main .main_fylo-container {
+    margin-bottom: 100px;
+  }
+
+  main .main-datastorage-container {
+    margin-bottom: 100px;
+  }
 }
