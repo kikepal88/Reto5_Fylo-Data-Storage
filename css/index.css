@@ -23,16 +23,20 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  font-family: "Raleway";
   background-image: url(https://firebasestorage.googleapis.com/v0/b/fylo-data-storage.appspot.com/o/bg-mobile.png?alt=media&token=c3609436-bb15-4184-a547-473f17a3426d);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  color: var(--pale-blue);
 }
 
 main .main_fylo-container {
   width: 85%;
+  margin: 150px 0 10px 0;
   padding: 40px;
   background-color: var(--dark-blue);
   /* border: 1px solid red; */
@@ -55,4 +59,73 @@ main .fylo-icon-container {
   background-color: var(--very-darkblue);
   /* border: 1px solid red; */
   border-radius: 10px;
+}
+
+main .main-datastorage-container {
+  position: relative;
+  width: 85%;
+  margin: 10px 0 150px 0;
+  padding: 40px 30px 60px;
+  text-align: center;
+  /* border: 1px solid red; */
+  background-color: var(--dark-blue);
+  border-radius: 10px;
+}
+
+.total-storage {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 25px;
+  margin: 10px 0;
+  padding: 3px;
+  background-color: var(--very-darkblue);
+  /* border: 1px solid red; */
+  border-radius: 12px;
+}
+
+.used-storage {
+  display: flex;
+  justify-content: flex-end;
+  width: 81.5%;
+  height: 19px;
+  padding: 2px;
+  background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  /* border: 1px solid red; */
+  border-radius: 9px;
+}
+
+.point-used-storage {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.datastorage-capacity {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.free-datastorage-info {
+  position: absolute;
+  right: calc(50% - 85px);
+  bottom: -30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 70px;
+  padding: 20px 12px;
+  background-color: white;
+  color: var(--grayish-blue);
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.number-data {
+  margin-right: 10px;
+  color: var(--very-darkblue);
+  font-size: 40px;
 }
