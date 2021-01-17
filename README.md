@@ -1,6 +1,8 @@
 # Escuela de Desarrollo Web by Platzi - Fylo data storage component
 
-![Design preview for the Fylo data storage component coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Fylo data storage component coding challenge](https://firebasestorage.googleapis.com/v0/b/fylo-data-storage.appspot.com/o/desktop-preview.jpg?alt=media&token=c702e192-4a6c-4f13-b19e-ef25bae5e407)
+
+Aquí les presento la realización del reto de la semana 5 del #PlatziWebChalenge, abajo se encuentran cuáles eran las instrucciones y condiciones del reto.
 
 ## Bienvenida/o 👋
 
